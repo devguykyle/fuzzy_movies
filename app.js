@@ -1,4 +1,5 @@
 const express = require('express');
+const cards = require('./data/cardData.js');
 
 var app = express();
 
@@ -6,10 +7,7 @@ var app = express();
 app.set('view engine', 'ejs');
 
 app.get('/', function(req, res){
-  cards = [
-           {title: 'Card 1', details: 'These are Details for card 1'},
-           {title: 'Card 2', details: 'These are Details for card 2'}
-          ];
+
   res.render('home', {cards: cards});
 });
 
