@@ -1,0 +1,15 @@
+header {
+  background-color: yellow;
+}
+
+header ul {
+  list-style-type: none;
+}
+
+header li {
+  display: inline-block;
+}
+
+header div {
+  display: inline-block;
+}
