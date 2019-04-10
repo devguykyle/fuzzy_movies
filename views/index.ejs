@@ -1,0 +1,24 @@
+<head>
+  <title>Movies</title>
+</head>
+
+<h1>Movie Surfer</h1>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+
+  <div id="card-list">
+    <input type="text" class="fuzzy-search" />
+    <ul class="list">
+      <% cards.forEach(function(card){ %>
+        <li>
+          <% include ./partials/movieCard %>
+        </li>
+      <% }) %>
+    </ul>
+  </div>
+
+  <script type="text/javascript">
+    var cardList = new List('card-list', {
+      valueNames: ['title']
+    });
+  </script>

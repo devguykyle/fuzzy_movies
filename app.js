@@ -8,8 +8,9 @@ app.set('view engine', 'ejs');
 
 app.get('/', function(req, res){
 
-  res.render('home', {cards: cards});
+  res.render('index', {cards: cards});
 });
+
 
 
 app.listen(3000, function(){
