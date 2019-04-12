@@ -1,27 +1,32 @@
 <head>
   <title>Movies</title>
   <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 
 <body>
-  <header>
-    <div class="logo">
-      <h2>Movie Surfer</h2>
-    </div>
+  <nav class="navbar navbar-inverse">
+    <div class="container">
+      <header>
+        <div class="logo">
+          <h2>Movie Surfer</h2>
+        </div>
 
-    <div class="menu">
-      <ul>
-        <li>Home</li>
-        <li>Blog</li>
-      </ul>
+        <div class="menu">
+          <ul>
+            <li>Home</li>
+            <li>Blog</li>
+          </ul>
+        </div>
+      </header>
     </div>
-  </header>
+  </nav>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
 
-  <div id="card-list">
-    <input type="text" class="fuzzy-search" />
+  <div class="container" id="card-list">
+    <input type="text" placeholder="What would you like to see..." class="fuzzy-search" />
     <ul class="list">
       <% cards.forEach(function(card){ %>
         <li>
@@ -37,4 +42,7 @@
     });
   </script>
 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   </body>

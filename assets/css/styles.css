@@ -1,5 +1,5 @@
 header {
-  background-color: yellow;
+  color: yellow;
 }
 
 header ul {
@@ -8,8 +8,42 @@ header ul {
 
 header li {
   display: inline-block;
+  padding: 10px;
 }
 
 header div {
   display: inline-block;
+}
+
+
+
+.logo{
+  width: 75%;
+  padding-left: 20px;
+}
+
+
+.menu {
+  width: 15%;
+  padding: 10px;
+}
+
+
+.list {
+  list-style-type: none;
+}
+
+.list  li{
+  display: inline-block;
+  width: 30%;
+  height: 160;
+  margin-right: 5px;
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+}
+
+#card-list input {
+  width: 60%;
+  height: 40px;
 }

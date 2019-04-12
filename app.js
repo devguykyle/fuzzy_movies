@@ -14,7 +14,32 @@ app.get('/', function(req, res){
 });
 
 
+app.get('/adminLogin', function(req, res){
+
+});
+
+app.get('/admin', function(req, res){
+
+});
+
+app.get('/admin', function(req, res){
+
+});
+
 
 app.listen(3000, function(){
   console.log('listening on localhost:3000');
-})
+});
+
+
+
+/*
+Home - all movies and search
+Movie detail view - modal
+Login view
+logout controller
+comment controller
+upvote controller
+downvote controller
+
+*/
